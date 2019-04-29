@@ -1,0 +1,62 @@
+print ("Welcome to Sandwich Adventure!!")
+answer = input("Let's make a sandwich! Type (ok) to start!")
+
+if answer == "ok":
+    print("Okay!!! What colour bread do we want to use?")
+    answer = input("white/brown/vegan")
+
+    if answer == ("brown"):
+        print("You decide brown is the healthy choice!\n"
+              "You head over to your selection of breads only to discover you're out of brown bread.\n"
+              "The thought that your dream sandwich never being made makes you fall into a deep depression.\n"
+              "Life was never the same.")
+    elif answer == ("vegan"):
+        print("you remembered you're vegan, and we all know that this has an impact on the bread we eat!\n"
+              "Walking over to the bread you pass a bottle of wine.\n"
+              "you also remember that you really like wine and decide to have a glass before you make a sandwich.\n"
+              "You end up sat on the floor with an empty bottle or two by your side passed out\n"
+              "Because sometimes drinking is better. But you never made that sandwich.\n")
+    elif answer == ("white"):
+        print("White is a safe choice! Okay so we have our bread.")
+        answer = input ("You see the toaster.\n Do you Toast your bread?")
+        if answer == "yes":
+            print("You but two slices into the toaster and wait for the pop up. The toast is stuck....\n"
+                  "it looks like it just needs a little help. You pick up a knife and pry the first toast out.\n"
+                  "You move on to the seconed add electrocute yourself.\n "
+                  "you are no longer in a condition to make a sandwich.")
+        elif answer == "no":
+            print ("Din't think so! You put the toaster in the bin")
+            answer = input("Should I butter my bread? (yes/no)")
+
+            if answer == "no":
+                print ("What you doing are you a doing!?\n"
+                       "The FBI break in and shoot you down.")
+            elif answer == "yes":
+                print ("You butter that bad boy up")
+                answer = input("Now do I want jam, meat or cheese?")
+
+            if answer == "jam":
+                print ("You open the jam jar and wonder how long its been in the fridge for.\n"
+                       "as you spread it the smell and the mold makes you heave\n"
+                       "You no longer want a sandwich and put your fridge on the bombfire.")
+            elif answer == "meat":
+                print ("You look at the cat.\n But before you can even consider anything the cat jumps at you.\n"
+                       "You fall to the floor as the cat takes a bite of you before setting your house on fire.\n"
+                       "not your day.")
+            elif answer == "cheese":
+                print ("Well done you made a cheese sandwich.")
+                answer =input("the end")
+            else:
+                print("You break down in tears as life has just go to hard.\n"
+                      "you're a failre.")
+
+        else:
+            print("The toaster runs off.\nIn a confused state you chase it.\nForgetting the sandwich")
+    else:
+        print ("go fuck yourself")
+else:
+    print ("Din't want to play anyway.")
+
+
+
+
